@@ -8,7 +8,7 @@ function controller () {
         diceView.showFace("blur");
         window.setTimeout( function () {
             diceView.showFace(diceModel.getFace());
-        }, 100);
+        }, 200);
     };
 
     this.init = function () {
