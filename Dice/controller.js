@@ -5,7 +5,10 @@ var diceView = new view(), diceModel = new model(), diceController = null;
 function controller () {
 
     this.updateDisplay = function () {
-        diceView.showFace(diceModel.getFace());
+        diceView.showFace("blur");
+        window.setTimeout( function () {
+            diceView.showFace(diceModel.getFace());
+        }, 100);
     };
 
     this.init = function () {
