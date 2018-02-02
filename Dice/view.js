@@ -1,6 +1,6 @@
 "use strict";
 
-fucntion view() {
+function view() {
     var image  = document.getElementById("dice");
     var randomBtn = document.getElementById("rndB");
     this.showFace = function (faceNo) {

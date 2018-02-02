@@ -5,7 +5,7 @@ var diceView = new view(), diceModel = new model(), diceController = null;
 function controller () {
 
     this.updateDisplay = function () {
-        diceView.showFace(model.getFace());
+        diceView.showFace(diceModel.getFace());
     };
 
     this.init = function () {
@@ -17,4 +17,4 @@ function controller () {
 }
 
 diceController = new controller();
-window.addEventListener("load", controller.init());
+window.addEventListener("load", diceController.init);
